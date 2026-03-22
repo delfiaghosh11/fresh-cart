@@ -1,5 +1,5 @@
-import { useParams, useLocation, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import * as api from "../services/api";
 
 export default function OrderConfirmation() {
@@ -89,7 +89,7 @@ export default function OrderConfirmation() {
 
         {/* Actions */}
         <div style={{ marginTop: 32, display: "flex", gap: 12, justifyContent: "center" }}>
-          <Link to="/orders" className="empty-state-btn" style={{ background: "var(--color-text)", padding: "12px 24px", borderRadius: 9999, color: "white", fontWeight: 600 }}>
+          <Link to="/orders" className="empty-state-btn" style={{ background: "var(--color-text)", padding: "12px 24px", borderRadius: 9999, color: "black", fontWeight: 600 }}>
             View All Orders
           </Link>
           <Link to="/" className="empty-state-btn">
