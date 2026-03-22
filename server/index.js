@@ -10,8 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Middleware
-app.use(cors({ origin: 'http://localhost:5173' }));
-// app.use(cors({ origin: 'https://fresh-cart-client.vercel.app' }));
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // Request logger
