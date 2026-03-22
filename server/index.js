@@ -21,6 +21,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
+app.use('/', (req, res) => res.send('Server is running'));
 app.use('/api/products', productRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
